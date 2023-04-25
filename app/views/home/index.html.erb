@@ -1,0 +1,138 @@
+
+
+<div class="d-flex align-items-center justify-content-center mt-3">
+  <h1 class="text-primary">Hello Sortable !!</h1>
+</div>
+
+<div class="container">
+
+  <div class="d-flex mt-4 vh-50">
+
+    <div class="card card-body m-1 flex-grow-1" style="min-height:400px">
+      <span class="text-warning">bloc 1</span></span>
+      <div  style="height:100%" data-controller="sortable" data-sortable-url="/tasks/:id/move" data-bloc="1">
+        <% @tasks.where(bloc: 1).order(position: :asc).each do |task|%>
+          <%= render task%>
+        <% end %>
+      </div>
+        <div class="align-items-center justify-content-center newPostit">
+          <img src="/images/plus.svg"/>
+        </div>
+    </div>
+
+    <div class="d-flex flex-column flex-grow-1" style="min-height:400px">
+        <div class="card card-body m-1" style="min-height:250px">
+          <span class="text-warning">bloc 2</span>
+          <div style="height:100%" data-controller="sortable" data-sortable-url="/tasks/:id/move" data-bloc="2">
+            <% @tasks.where(bloc: 2).order(position: :asc).each do |task|%>
+              <%= render task%>
+            <% end %>
+          </div>
+          <div class="align-items-center justify-content-center newPostit">
+            <img src="/images/plus.svg"/>
+          </div>
+        </div>
+        <div class="card card-body m-1" style="min-height:250px">
+          <span class="text-warning">bloc 3</span>
+          <div  style="height:100%" data-controller="sortable" data-sortable-url="/tasks/:id/move" data-bloc="3">
+            <% @tasks.where(bloc: 3).order(position: :asc).each do |task|%>
+              <%= render task%>
+            <% end %>
+          </div>
+          <div class="align-items-center justify-content-center newPostit">
+            <img src="/images/plus.svg"/>
+          </div>
+        </div>
+    </div>
+
+    <div class="card card-body m-1 flex-grow-1" style="min-height:400px">
+      <span class="text-warning">bloc 4</span>
+        <div  style="height:100%" data-controller="sortable" data-sortable-url="/tasks/:id/move" data-bloc="4">
+        <% @tasks.where(bloc: 4).order(position: :asc).each do |task|%>
+          <%= render task%>
+        <% end %>
+        </div>
+        <div class="align-items-center justify-content-center newPostit">
+          <img src="/images/plus.svg"/>
+        </div>
+    </div>
+
+    <div class="d-flex flex-column flex-grow-1" style="min-height:400px">
+        <div class="card card-body m-1" style="min-height:250px">
+          <span class="text-warning">bloc 5</span>
+          <div  style="height:100%" data-controller="sortable" data-sortable-url="/tasks/:id/move" data-bloc="5">
+            <% @tasks.where(bloc: 5).order(position: :asc).each do |task|%>
+              <%= render task%>
+            <% end %>
+          </div>
+          <div class="align-items-center justify-content-center newPostit">
+            <img src="/images/plus.svg"/>
+          </div>
+        </div>
+        <div class="card card-body m-1" style="min-height:250px">
+          <span class="text-warning">bloc 6</span>
+          <div  style="height:100%" data-controller="sortable" data-sortable-url="/tasks/:id/move" data-bloc="6">
+            <% @tasks.where(bloc: 6).order(position: :asc).each do |task|%>
+              <%= render task%>
+            <% end %>
+          </div>
+          <div class="align-items-center justify-content-center newPostit">
+            <img src="/images/plus.svg"/>
+          </div>
+        </div>
+    </div>
+
+    <div class="card card-body m-1 flex-grow-1" style="min-height:400px">
+      <span class="text-warning">bloc 7</span>
+        <div  style="height:100%" data-controller="sortable" data-sortable-url="/tasks/:id/move" data-bloc="7">
+          <% @tasks.where(bloc: 7).order(position: :asc).each do |task|%>
+            <%= render task%>
+          <% end %>
+        </div>
+        <div class="align-items-center justify-content-center newPostit">
+          <img src="/images/plus.svg"/>
+        </div>
+    </div>
+
+  </div>
+
+  <div class="d-flex vh-50">
+    <div class="card card-body m-1" style="min-height:240px">
+      <span class="text-warning">bloc 8</span>
+      <div  style="height:100%" data-controller="sortable" data-sortable-url="/tasks/:id/move" data-bloc="8">
+        <% @tasks.where(bloc: 8).order(position: :asc).each do |task|%>
+          <%= render task%>
+        <% end %>
+      </div>
+      <div class="align-items-center justify-content-center newPostit">
+        <img src="/images/plus.svg"/>
+      </div>
+    </div>
+
+    <div class="card card-body m-1" style="min-height:240px">
+      <span class="text-warning">bloc 9</span>
+      <div  style="height:100%" data-controller="sortable" data-sortable-url="/tasks/:id/move" data-bloc="9">
+        <% @tasks.where(bloc: 9).order(position: :asc).each do |task|%>
+          <%= render task%>
+        <% end %>
+      </div>
+      <div class="align-items-center justify-content-center newPostit">
+        <img src="/images/plus.svg"/>
+      </div>
+    </div>
+
+    <div class="card card-body m-1" style="min-height:240px">
+      <span class="text-warning">bloc 10</span>
+      <div  style="height:100%" data-controller="sortable" data-sortable-url="/tasks/:id/move" data-bloc="10">
+        <% @tasks.where(bloc: 10).order(position: :asc).each do |task|%>
+          <%= render task%>
+        <% end %>
+      </div>
+      <div class="align-items-center justify-content-center newPostit">
+        <img src="/images/plus.svg"/>
+      </div>
+
+    </div>
+
+  </div>
+</div>
